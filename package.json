@@ -1,0 +1,34 @@
+{
+  "name": "cheqgu-homepage",
+  "version": "1.0.0",
+  "description": "Cheqgu's website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Cheqgu",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.5.1",
+    "git-pull-or-clone": "^2.0.2",
+    "next": "^12.2.2",
+    "node": "^18.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "three": "^0.139.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5",
+    "prettier": "^2.6.2"
+  }
+}
