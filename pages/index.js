@@ -65,21 +65,21 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="https://wa.me/6737447215" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoWhatsapp />Whatsapp
+              <IoLogoWhatsapp /> Whatsapp
             </Button>
           </NextLink>
         </Box>
         <Box align="center" my={4}>
           <NextLink href="https://www.instagram.com/cheqgubranded" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoInstagram />Instagram
+              <IoLogoInstagram /> Instagram
             </Button>
           </NextLink>
         </Box>
         <Box align="center" my={4}>
           <NextLink href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoFacebook />Facebook
+              <IoLogoFacebook /> Facebook
             </Button>
           </NextLink>
         </Box>
