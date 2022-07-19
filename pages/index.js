@@ -11,6 +11,7 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
+import { IoLogoWhatsapp, IoLogoInstagram, IoLogoFacebook } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -64,21 +65,21 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="https://wa.me/6737447215" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Reach us now through Whatsapp message
+              <IoLogoWhatsapp>Whatsapp
             </Button>
           </NextLink>
         </Box>
         <Box align="center" my={4}>
           <NextLink href="https://www.instagram.com/cheqgubranded" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Explore our range of collections through Instagram
+              Instagram
             </Button>
           </NextLink>
         </Box>
         <Box align="center" my={4}>
           <NextLink href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Visit our online store on Facebook
+              Facebook
             </Button>
           </NextLink>
         </Box>
