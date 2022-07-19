@@ -112,15 +112,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                <MenuItem
+                  as={Link}
+                  href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/"
+                >
+                  View Facebook
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://instagram.com/cheqgubranded"
