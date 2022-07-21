@@ -1,4 +1,3 @@
-import NextLink from 'next/link'
 import {
   Link,
   Container,
@@ -10,8 +9,6 @@ import {
   ListItem,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
