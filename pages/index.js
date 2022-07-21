@@ -1,15 +1,22 @@
 import NextLink from 'next/link'
 import {
+  Link,
   Container,
   Heading,
   Box,
+  SimpleGrid,
   Button,
+  List,
+  ListItem,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import { GridItem } from '../components/grid-item'
+import thumbInstagram from '../public/images/instagram.png'
+import thumbFacebook from '../public/images/facebook.png'
 import Image from 'next/image'
 import { IoLogoWhatsapp, IoLogoInstagram, IoLogoFacebook } from 'react-icons/io5'
 
@@ -59,30 +66,59 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Links
         </Heading>
-        <Paragraph>
-          Click on the following &quot;links&quot; and get the best price from us &#x1F609;
-        </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="https://wa.me/6737447215" passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoWhatsapp />&nbsp;Whatsapp
-            </Button>
-          </NextLink>
-        </Box>
-        <Box align="center" my={4}>
-          <NextLink href="https://www.instagram.com/cheqgubranded" passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoInstagram />&nbsp;Instagram
-            </Button>
-          </NextLink>
-        </Box>
-        <Box align="center" my={4}>
-          <NextLink href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/" passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <IoLogoFacebook />&nbsp;Facebook
-            </Button>
-          </NextLink>
-        </Box>
+        <List>
+          <ListItem>
+            <Link href="http://wa.me/6737447215" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoWhatsapp />}
+              >
+                Whatsapp
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://instagram.com/cheqgubranded" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoInstagram />}
+              >
+                @cheqgubranded
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoFacebook />}
+              >
+                Facebook Store
+              </Button>
+            </Link>
+          </ListItem>
+
+        </List>
+
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="https://www.instagram.com/cheqgubranded"
+            title="Cheqgu Instagram"
+            thumbnail={thumbInstagram}
+          >
+            Official Instagram page 
+          </GridItem>
+          <GridItem
+            href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/"
+            title="Facebook"
+            thumbnail={thumbFacebook}
+          >
+            Official Facebook page
+          </GridItem>
+        </SimpleGrid>
       </Section>
      </Container>
   </Layout>
