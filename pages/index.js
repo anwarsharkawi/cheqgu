@@ -103,14 +103,14 @@ const Home = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.instagram.com/cheqgubranded"
-            title="Cheqgu Instagram"
+            title="@cheqgubranded"
             thumbnail={thumbInstagram}
           >
             Official Instagram page 
           </GridItem>
           <GridItem
             href="https://www.facebook.com/Cheqgu-Branded-Store-111391418170989/"
-            title="Facebook"
+            title="Cheqgu Branded Store"
             thumbnail={thumbFacebook}
           >
             Official Facebook page
